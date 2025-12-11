@@ -18,5 +18,11 @@
     <ClCompile Include="mean.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
+    <ClCompile Include="constCast.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="模板类实例.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>
