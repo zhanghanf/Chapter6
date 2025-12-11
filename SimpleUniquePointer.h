@@ -1,8 +1,10 @@
 #pragma once
 // A simple implementation of a unique pointer in C++简单的C++唯一指针实现
+//RALL模板家族成员：智能指针
 template <typename T>
 class SimpleUniquePointer
 {
+public:
 	SimpleUniquePointer() = default;// Default constructor默认构造函数
 	SimpleUniquePointer(const SimpleUniquePointer&) = delete; // Disable copy constructor禁用拷贝构造函数
 	SimpleUniquePointer(T* ptr) : m_ptr(ptr) {} // Constructor with raw pointer使用原始指针的构造函数
@@ -25,7 +27,7 @@ class SimpleUniquePointer
 	}
 	T*get() const { return m_ptr; } // Get the raw pointer获取原始指针
 private:
-	T* m_ptr = nullptr; // Raw pointer原始指针
+	T* m_ptr; // Raw pointer原始指针
 };
 
 //使用delete删除构造函数和赋值运算符，防止拷贝操作，但刻意通过移动语义实现所有权转移，从而确保资源的唯一所有权。

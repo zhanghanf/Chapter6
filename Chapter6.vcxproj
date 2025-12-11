@@ -123,8 +123,6 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="constCast.cpp" />
-    <ClCompile Include="mean.cpp" />
     <ClCompile Include="SimpleUniquePointer.cpp" />
   </ItemGroup>
   <ItemGroup>
